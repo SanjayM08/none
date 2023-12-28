@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  yt:
+    build: ./chrome
+    ports:
+      - "80:80"
+  
+  riz:
+    build: ./clone
+    ports:
+      - "443:80"
+  
+  linkedin:
+    build: ./leo
+    ports:
+      - "404:80"
